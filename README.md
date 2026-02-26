@@ -26,3 +26,9 @@ Clone the repository and run the script:
 git clone https://github.com/JoonKeat-MS/Project-NumPy-Structural-Foundations-Lab.git
 cd Project-NumPy-Structural-Foundations-Lab
 python 01_shape_experiments.py
+
+---
+
+## License
+This project is licensed under the MIT License.  
+See the [LICENSE](LICENSE) file for details.
