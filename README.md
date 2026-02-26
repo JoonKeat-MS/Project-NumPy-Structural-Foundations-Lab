@@ -89,7 +89,7 @@ Outcome:
 - Predict broadcast compatibility
 - Understand dimension auto-expansion
 
-Status: In Progress
+Status: Completed
 
 ---
 
@@ -107,7 +107,7 @@ Outcome:
 - Implement efficient simulation pipelines
 - Apply structural knowledge to computation
 
-Status: Planned
+Status: In Progress
 
 ---
 
@@ -117,7 +117,7 @@ Current Progress:
 
 - [x] 01 Shape Experiments
 - [x] 02 Axis Tests
-- [ ] 03 Broadcasting Cases
+- [x] 03 Broadcasting Cases
 - [ ] 04 Statistical Simulation
 
 Next Milestone:
