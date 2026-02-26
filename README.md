@@ -19,17 +19,9 @@ It explores how NumPy arrays behave in terms of **shape, dimensionality, axis ma
   - Axis reordering with `transpose`
   - Comparison of `flatten`, `ravel`, and `reshape`
   - Memory layout checks with `np.shares_memory`
- 
-## Usage
-Clone the repository and run the script:
-```bash
-git clone https://github.com/JoonKeat-MS/Project-NumPy-Structural-Foundations-Lab.git
-cd Project-NumPy-Structural-Foundations-Lab
-python 01_shape_experiments.py
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-
 This project is licensed under the MIT License.  
 See the [LICENSE](LICENSE) file for details.
 
@@ -39,7 +31,6 @@ Clone the repository and run the script:
 git clone https://github.com/JoonKeat-MS/Project-NumPy-Structural-Foundations-Lab.git
 cd Project-NumPy-Structural-Foundations-Lab
 python 01_shape_experiments.py
-
 ---
 
 
