@@ -121,7 +121,7 @@ Current Progress:
 - [ ] 04 Statistical Simulation
 
 Next Milestone:
-Complete broadcasting mastery and apply it in a Monte Carlo simulation project.
+Apply knowledge learnt in a Monte Carlo simulation project.
 
 ---
 
