@@ -20,6 +20,12 @@ It explores how NumPy arrays behave in terms of **shape, dimensionality, axis ma
   - Comparison of `flatten`, `ravel`, and `reshape`
   - Memory layout checks with `np.shares_memory`
 
+##License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+This project is licensed under the MIT License.  
+See the [LICENSE](LICENSE) file for details.
+
 ## Usage
 Clone the repository and run the script:
 ```bash
