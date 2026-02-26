@@ -2,32 +2,36 @@
 
 ## Overview
 
-This repository is a structured experimental lab focused on building
-deep structural intuition about NumPy arrays.
+This repository is a structured experimental lab designed to build
+deep intuition about how NumPy arrays behave internally.
 
-Rather than learning NumPy as an API collection, this project investigates
-how multidimensional arrays behave internally — in terms of shape,
-axis mechanics, broadcasting rules, and memory layout.
+Rather than learning NumPy as a collection of functions,
+this project investigates:
 
-The ultimate goal is to develop strong numerical reasoning skills
-for statistical modeling, scientific computing, and AI research.
+- Shape mechanics
+- Axis semantics
+- Broadcasting rules
+- Memory sharing behavior
+- Vectorized statistical simulation
+
+The goal is to develop strong structural reasoning in numerical computing —
+a foundational skill for statistics, data science, and AI research.
 
 ---
 
-# Core Learning Philosophy
+# Learning Philosophy
 
 NumPy is not just a library — it is a computational model.
 
 Understanding it requires clarity in:
 
-- Dimensional structure
-- Axis semantics
-- Memory representation
-- Reduction logic
-- Broadcasting rules
+- How multidimensional arrays are structured
+- How dimensions collapse during reductions
+- How broadcasting expands dimensions logically
+- How memory views differ from copies
+- How vectorization replaces loops
 
-Each experiment in this repository isolates one structural concept
-and studies it rigorously.
+This lab approaches NumPy concept-by-concept through controlled experiments.
 
 ---
 
@@ -40,17 +44,17 @@ This lab consists of four structured experiments:
 ## 01 — Shape & Memory Foundations
 
 Focus:
-- Array creation (1D, 2D, 3D)
-- Shape and dimensionality (`shape`, `ndim`)
-- `reshape` mechanics and element invariance
-- Axis permutation using `transpose`
-- Memory behavior: `flatten` vs `ravel` vs `reshape`
-- Verifying view vs copy using `np.shares_memory`
+- Array creation in 1D, 2D, 3D
+- `shape` and `ndim`
+- `reshape` invariance of total elements
+- `transpose` axis permutation
+- `flatten` vs `ravel` vs `reshape`
+- Memory sharing validation using `np.shares_memory()`
 
 Outcome:
-- Understand why total element count cannot change
-- Understand how tensors are reinterpreted structurally
-- Understand memory-sharing behavior
+- Understand tensor reinterpretation
+- Predict shape transformations
+- Distinguish view vs copy behavior
 
 Status: Completed
 
@@ -61,53 +65,61 @@ Status: Completed
 Focus:
 - Meaning of `axis`
 - Row-wise vs column-wise aggregation
-- Reduction operations (`sum`, `mean`, `max`, `min`)
-- Dimensional collapse behavior
-- `keepdims=True` and shape preservation
-- 3D axis reduction experiments
+- Reduction functions (`sum`, `mean`, `max`, `min`)
+- Dimensional collapse logic
+- `keepdims=True`
+- 3D axis experiments
 
 Outcome:
-- Predict result shapes without running code
-- Understand how statistical reductions operate on tensors
-- Develop shape reasoning across dimensions
+- Predict result shapes before execution
+- Understand statistical aggregation on tensors
+- Develop mental shape tracing
 
 Status: Completed
 
 ---
 
-## 03 — Broadcasting & Vectorization (Upcoming)
+## 03 — Broadcasting & Dimension Expansion
 
 Focus:
-- Broadcasting rules
-- Implicit dimension expansion
-- Shape alignment algorithm
-- Scalar vs vector vs matrix operations
-- Practical vectorized computation
+- Broadcasting rules (right-aligned comparison)
+- Scalar expansion
+- Row vs column vector broadcasting
+- Incompatible shapes
+- Explicit dimension control using `np.newaxis`
 
 Outcome:
-- Replace loops with vectorized logic
+- Understand implicit dimension expansion
+- Replace loops with vectorized operations
 - Predict broadcast compatibility
-- Understand dimension auto-expansion
 
 Status: Completed
 
 ---
 
-## 04 — Statistical Simulation & Numerical Modeling (Upcoming)
+## 04 — Monte Carlo Coin Simulation
 
 Focus:
-- Random sampling (`np.random`)
-- Monte Carlo simulation
+- Random sampling with NumPy
+- Vectorized simulation of repeated experiments
 - Empirical probability estimation
-- Vectorized statistical computation
-- Performance comparison vs pure Python loops
+- Law of Large Numbers demonstration
+- Statistical visualization using Matplotlib
+
+Implementation:
+- Simulate 10,000 experiments
+- Each experiment contains 100 coin flips
+- Estimate head probability per trial
+- Visualize probability distribution
+- Demonstrate convergence to 0.5
 
 Outcome:
-- Use NumPy for real statistical modeling
-- Implement efficient simulation pipelines
-- Apply structural knowledge to computation
+- Apply shape, axis, and broadcasting knowledge in practice
+- Understand Monte Carlo simulation basics
+- Observe statistical convergence behavior
+- Connect numerical computing with probability theory
 
-Status: In Progress
+Status: Completed
 
 ---
 
@@ -118,10 +130,34 @@ Current Progress:
 - [x] 01 Shape Experiments
 - [x] 02 Axis Tests
 - [x] 03 Broadcasting Cases
-- [ ] 04 Statistical Simulation
+- [x] 04 Statistical Simulation
 
-Next Milestone:
-Apply knowledge learnt in a Monte Carlo simulation project.
+Potential future expansions:
+- Biased coin simulation
+- Binomial distribution comparison
+- Central Limit Theorem experiment
+- Performance comparison (vectorized vs loops)
+- Portfolio-level statistical mini projects
+  
+---
+
+# What This Project Demonstrates
+
+This lab shows:
+
+- Structured learning progression
+- Clear conceptual separation of experiments
+- Strong shape reasoning ability
+- Understanding of vectorization
+- Basic statistical simulation capability
+- Clean, reproducible experimental design
+
+It demonstrates foundational competence in numerical computing —
+a prerequisite for machine learning frameworks such as:
+
+- PyTorch
+- TensorFlow
+- JAX
 
 ---
 
@@ -160,7 +196,8 @@ git clone https://github.com/JoonKeat-MS/Project-NumPy-Structural-Foundations-La
 cd Project-NumPy-Structural-Foundations-Lab
 python 01_shape_experiments.py
 python 02_axis_tests.py
-
+python 03_broadcasting_cases.py
+python 04_statistical_simulation.py
 
 
 
